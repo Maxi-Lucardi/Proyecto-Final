@@ -1,0 +1,428 @@
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+span {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.img-viñeta {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+/* ESTILOS HEADER */
+header {
+    width: 100%;
+    height: 70px;
+    background: #232323;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list{
+display: flex;
+list-style-type: none;
+
+}
+
+.navbar ul a{
+    display: inline-block;
+    padding: 10px;
+    color: #f5f5f5;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Roboto Condensed", serif;
+    font-weight: Medium;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar ul a:hover{
+    font-size: 22px;
+    text-shadow: 1px 1px 3px #f2f2f2;
+}
+
+.abrir-menu{
+    display: none;
+}
+.cerrar-menu{
+    display: none;
+}
+
+@media (720px > width){
+/* .abrir-menu{
+    display: block;
+}
+.navbar{
+    display: none;
+} */
+
+.navbar{
+position: absolute;
+top: 0;
+right: 0;
+
+}
+
+.navbar-list{
+
+    flex-direction: column;
+    align-items: end;
+  
+}
+
+}
+
+/* ESTILOS SECCIONES*/
+/* seccion presentacion */
+.Presentacion-container {
+    background-image: url(../img/Presentacion.jpg);
+    background-size: cover;
+    padding-top: 150px;
+    animation: change 15s infinite ease-in-out;
+    height: 100vh;
+}
+
+@keyframes change {
+    40% {
+        background-image: url(../img/Presentacion2.jpg);
+    }
+}
+
+.Presentacion-container h1 {
+    font-size: 75px;
+    width: 450px;
+    line-height: 80px;
+    padding: 20px;
+    text-shadow: 2px 1px 0px #232323;
+    margin-left: 70px;
+    color: #f5f5f5;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+.Presentacion-container h2 {
+    width: 500px;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 10px;
+    margin-left: 70px;
+    color: #f5f5f5;
+    text-shadow: 1px 2px 0px #232323;
+    letter-spacing: 1px;
+}
+
+.Presentacion-container p {
+    font-size: 24px;
+    color: #f5f5f5;
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-top: 40px;
+    background-color: #00c782;
+    background-image: linear-gradient(90deg, #5a9654 1%, #375e26 52%, #1c201e 100%);
+    text-shadow: 0px 0px 1px #f2f2f2;
+}
+
+.Presentacion-container a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.boton-banner {
+    font-size: 24px;
+    color: #f5f5f5;
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-top: 40px;
+    background-color: #00c782;
+    background-image: linear-gradient(90deg, #5a9654 1%, #375e26 52%, #1c201e 100%);
+    text-shadow: 0px 0px 1px #f2f2f2;
+}
+
+/* seccion tratamientos */
+.tratamientos-container {
+    height: 100vh;
+}
+
+.tratamientos-colum {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.tratamientos-container h2 {
+    width: 100%;
+    font-size: 50px;
+    line-height: 50px;
+    padding: 10px;
+    text-align: center;
+    color: #232323;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.tratamientos-banner {
+    font-size: 30px;
+    color: #f5f5f5;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    background-color: #00c782;
+    background-image: linear-gradient(90deg, #5a9654 1%, #375e26 52%, #1c201e 100%);
+    text-shadow: 1px 0px 1px #f2f2f2;
+}
+
+.tratamientos-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Seccion nosotros */
+.nosotros-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.nosotros-contenido {
+    width: 60%;
+    margin-left: 30px;
+    padding-left: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nosotros-img {
+    width: 30%;
+    margin-top: 90px;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+.nosotros-banner {
+    font-size: 35px;
+    color: #f5f5f5;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #00c782;
+    background-image: linear-gradient(90deg, #5a9654 1%, #375e26 52%, #1c201e 100%);
+    text-shadow: 1px 0px 1px #f2f2f2;
+}
+
+.nosotros-info {
+    width: 80%;
+    margin-top: 40px;
+}
+
+.nosotros-info h2 {
+    margin-bottom: 20px;
+    font-size: 47px;
+}
+
+.nosotros-info {
+    font-size: 20px;
+}
+
+/* Seccion precio */
+.precios-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.precios-margenes {
+    margin-bottom: 50px;
+}
+
+.precios-banner {
+    font-size: 35px;
+    color: #f5f5f5;
+    width: 100%px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #00c782;
+    background-image: linear-gradient(90deg, #5a9654 1%, #375e26 52%, #1c201e 100%);
+    text-shadow: 1px 0px 1px #f2f2f2;
+}
+
+.precios-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.precio-card {
+    width: 20%;
+    height: 500px;
+    background-color: #ebf0ea;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px 0px #232323;
+}
+
+.precio-card a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.precio-card-otro {
+    font-size: 30px;
+    color: #232323;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bolder;
+    line-height: 40px;
+}
+
+.precio-card-precio {
+    font-size: 37px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.precio-card-descuento {
+    font-size: 35px;
+    color: #f5f5f5;
+    width: 100%px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #00c782;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #5a9654 1%, #375e26 52%, #1c201e 100%);
+    text-shadow: 1px 0px 1px #f2f2f2;
+}
+
+/* SECCION CONTACTO */
+.contacto-container p {
+    font-size: 24px;
+}
+
+.contacto-presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-caja {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.contacto-info {
+    width: 45%;
+}
+
+.contacto-info p {
+    font-size: 20px;
+}
+
+.contacto-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-icon {
+    display: flex;
+    margin: 5px;
+}
+
+.contacto-icon h5 {
+    font-size: 26px;
+}
+
+.contacto-icon p {
+    font-size: 18px;
+}
+
+.contacto-formulario {
+    height: 500px;
+    width: 50%;
+    background-color: #ebf0ea;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-formulario h4 {
+    font-size: 22px;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+}
+
+/* PIE DE PAGINA */
+footer {
+    height: 80vh;
+    width: 40px;
+    background-color: #232323;
+    width: 100%;
+}
+
+.redes-container {
+    color: #f5f5f5;
+    display: flex;
+    justify-content: space-evenly;
+}
